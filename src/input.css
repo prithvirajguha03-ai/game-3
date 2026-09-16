@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .tile-appear {
+    animation: tile-appear 180ms ease-out;
+  }
+  .tile-pop {
+    animation: tile-pop 180ms ease-out;
+  }
+}
+
+@keyframes tile-appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes tile-pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
